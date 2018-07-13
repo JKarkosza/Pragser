@@ -6,6 +6,15 @@ $title-upper: #d7d8d8;
   font-size: $font-size;
   position: relative;
   color: $font-color;
+  font-family: $mainFont;
+  font-weight: 300;
+}
+
+@mixin sectionText($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: $mainFont;
+  font-weight: 300;
 }
 
 @mixin horizontalSection($bg-img, $bg-pos) {

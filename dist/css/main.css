@@ -51,13 +51,13 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 300; }
+  align-items: center; }
   .header__title {
     font-size: 60px;
     position: relative;
     color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     align-self: flex-start;
     padding-left: 9%;
     top: .3em; }
@@ -89,8 +89,35 @@ table {
     width: 100vw;
     background-size: cover;
     background-image: url("./../img/enter2.jpg");
-    background-position: right;
-    left: 0; }
+    background-position: 70%;
+    left: 0;
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8); }
+    .main .main__left .title {
+      z-index: 999;
+      font-size: 60px;
+      position: relative;
+      color: #d7d8d8;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60%;
+      margin-left: 20px; }
+      .main .main__left .title .section_subtitle {
+        text-transform: lowercase;
+        line-height: 20px;
+        color: #ffffff; }
+    .main .main__left .description {
+      font-size: 16px;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      position: absolute;
+      margin: 20px;
+      bottom: 10%;
+      line-height: 25px; }
   .main .main__right {
     position: absolute;
     height: 100vh;
