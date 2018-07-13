@@ -55,11 +55,9 @@ table {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
   .header__title {
-    color: #000000;
     font-size: 60px;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    color: #000000;
     align-self: flex-start;
     padding-left: 9%;
     top: .3em; }
@@ -72,4 +70,32 @@ table {
     bottom: 20px;
     color: #d7d8d8;
     text-transform: uppercase;
-    font-size: 20px; }
+    font-size: 20px;
+    text-decoration: none; }
+
+.main {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 0;
+  max-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  .main .main__left {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("./../img/enter2.jpg");
+    background-position: right;
+    left: 0; }
+  .main .main__right {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("./../img/paradiseRev.jpg");
+    background-position: left;
+    left: 100%; }
