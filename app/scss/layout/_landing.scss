@@ -36,17 +36,3 @@ body {
   letter-spacing: 1px;
   @include sectionText(20px, $title-upper);
 }
-
-.main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url('./../img/enter.jpg');
-  background-position: 65%;
-  background-size: cover;
-  .peace {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
