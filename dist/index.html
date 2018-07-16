@@ -9,20 +9,23 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <h1 class="header__title">Pragser<span>Wildsee</span></h1>
-    <a class="header__process" id='exploreBtn' href='#'>explore</a>
+    <a class="header__process button" id='exploreBtn' href='#'>explore</a>
   </header>
   <main class="main">
-    <section class="main__left" id='left'>
-      <h2 class="title">find<span class="section_subtitle">peace</span></h2>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus id orci a porttitor. Aenean dapibus, lacus sit amet tempus ornare, orci massa commodo lorem, et aliquet nulla purus vel lacus. Ut euismod turpis ac augue vestibulum, ac venenatis nisi sollicitudin. Proin vel placerat justo.</p>
+    <section class="left" id='left'>
+      <h2 class="left__title">find<span class="section_subtitle">peace</span></h2>
+      <p class="left__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus id orci a porttitor. Aenean dapibus, lacus sit amet tempus ornare, orci massa commodo lorem, et aliquet nulla purus vel lacus. Ut euismod turpis ac augue vestibulum, ac venenatis nisi sollicitudin. Proin vel placerat justo.</p>
+      <a class="left__back button" href="#" id="backTop">back to top</a>
+      <a class="left__next button" href="#" id='goRight'>find out more</a>
     </section>
-    <section class="main__right" id='right'>
-      <h2 class="title section_tittle">discover<span class="section_subtitle">paradise</span></h2>
-      <div class="description section_text">
+    <section class="right" id='right'>
+      <h2 class="right__title section_tittle">discover<span class="section_subtitle">paradise</span></h2>
+      <div class="right__description section_text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus id orci a porttitor. Aenean dapibus, lacus sit amet tempus ornare, orci massa commodo lorem, et aliquet nulla purus vel lacus. Ut euismod turpis ac augue vestibulum, ac venenatis nisi sollicitudin. Proin vel placerat justo.</p>
       </div>
+      <a class="right__next button" href="#" id='goLeft'>back</a>
     </section>
   </main>
   <script src="js/main.js">

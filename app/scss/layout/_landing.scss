@@ -25,13 +25,17 @@ body {
     }
   }
   &__process {
-    @include sectionText(20px, $title-upper);
     position: absolute;
     bottom: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
+
   }
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  @include sectionText(20px, $title-upper);
 }
 
 .main {
@@ -44,12 +48,12 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
-  .main__left {
+  .left {
     @include horizontalSection(enter2, 70%);
     left: 0;
     filter: brightness(.8);
     -webkit-filter: brightness(.8);
-    .title {
+    &__title {
       z-index: 999;
       @include sectionTitle(60px, $title-upper);
       text-transform: uppercase;
@@ -63,20 +67,30 @@ body {
         color: $texts;
       }
     }
-    .description {
+    &__description {
       @include sectionText(16px, $texts)
       position: absolute;
       margin: 20px;
       bottom: 10%;
       line-height: 25px;
     }
+    &__back {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+    &__next {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
-  .main__right {
+  .right {
     @include horizontalSection(paradiseRev, left);
     left: 100%;
     filter: brightness(.8);
     -webkit-filter: brightness(.8);
-    .title {
+    &__title {
       z-index: 999;
       @include sectionTitle(60px, $title-upper);
       text-transform: uppercase;
@@ -90,12 +104,17 @@ body {
         color: $texts;
       }
     }
-    .description {
+    &__description {
       @include sectionText(16px, $texts)
       position: absolute;
       margin: 20px;
-      bottom: 0;
+      bottom: 30px;
       line-height: 25px;
+    }
+    &__next {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
     }
   }
 }
