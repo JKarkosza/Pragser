@@ -5,6 +5,8 @@
   background-position: 65%;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
   &::before{
     position: absolute;
     content:" ";
@@ -35,9 +37,13 @@
     }
     &__description {
       @include sectionText(16px, $texts);
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       line-height: 20px;
       letter-spacing: 0.8px;
     }
+  }
+  &__process {
+    position: absolute;
+    bottom: 20px;
   }
 }

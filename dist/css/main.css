@@ -82,13 +82,22 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
+.arrowBtn {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
 .main {
   width: 100vw;
   height: 100vh;
   background-image: url("./../img/enter.jpg");
   background-position: 65%;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center; }
   .main::before {
     position: absolute;
     content: " ";
@@ -123,9 +132,12 @@ body {
       color: #ffffff;
       font-family: "Lato", sans-serif;
       font-weight: 300;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       line-height: 20px;
       letter-spacing: 0.8px; }
+  .main__process {
+    position: absolute;
+    bottom: 20px; }
 
 .discover {
   width: 100vw;

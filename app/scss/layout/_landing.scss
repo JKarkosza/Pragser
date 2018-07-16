@@ -36,3 +36,11 @@ body {
   letter-spacing: 1px;
   @include sectionText(20px, $title-upper);
 }
+
+.arrowBtn {
+  font-size: 20px;
+  color: $texts;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
