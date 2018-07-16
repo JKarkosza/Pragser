@@ -1,6 +1,6 @@
 body {
+  width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .header {
@@ -27,7 +27,6 @@ body {
   &__process {
     position: absolute;
     bottom: 20px;
-
   }
 }
 
@@ -39,82 +38,15 @@ body {
 }
 
 .main {
-  border: 1px solid black;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 0;
-  max-height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  .left {
-    @include horizontalSection(enter2, 70%);
-    left: 0;
-    filter: brightness(.8);
-    -webkit-filter: brightness(.8);
-    &__title {
-      z-index: 999;
-      @include sectionTitle(60px, $title-upper);
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      margin-top: 60%;
-      margin-left: 20px;
-      .section_subtitle {
-        text-transform: lowercase;
-        line-height: 20px;
-        color: $texts;
-      }
-    }
-    &__description {
-      @include sectionText(16px, $texts)
-      position: absolute;
-      margin: 20px;
-      bottom: 10%;
-      line-height: 25px;
-    }
-    &__back {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-    }
-    &__next {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-    }
-  }
-  .right {
-    @include horizontalSection(paradiseRev, left);
-    left: 100%;
-    filter: brightness(.8);
-    -webkit-filter: brightness(.8);
-    &__title {
-      z-index: 999;
-      @include sectionTitle(60px, $title-upper);
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      margin-top: 60%;
-      margin-left: 20px;
-      .section_subtitle {
-        text-transform: lowercase;
-        line-height: 20px;
-        color: $texts;
-      }
-    }
-    &__description {
-      @include sectionText(16px, $texts)
-      position: absolute;
-      margin: 20px;
-      bottom: 30px;
-      line-height: 25px;
-    }
-    &__next {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-    }
+  background-image: url('./../img/enter.jpg');
+  background-position: 65%;
+  background-size: cover;
+  .peace {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

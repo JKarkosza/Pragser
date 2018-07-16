@@ -43,8 +43,8 @@ table {
   border-spacing: 0; }
 
 body {
-  height: 100%;
-  overflow: hidden; }
+  width: 100%;
+  height: 100%; }
 
 .header {
   width: 100vw;
@@ -83,94 +83,58 @@ body {
   font-weight: 300; }
 
 .main {
-  border: 1px solid black;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 0;
-  max-height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
+  background-image: url("./../img/enter.jpg");
+  background-position: 65%;
+  background-size: cover; }
+  .main .peace {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./../img/enter.jpg");
+  background-position: 65%;
+  background-size: cover;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
   position: relative; }
-  .main .left {
+  .main::before {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-image: url("./../img/enter2.jpg");
-    background-position: 70%;
+    content: " ";
+    top: 0;
     left: 0;
-    filter: brightness(0.8);
-    -webkit-filter: brightness(0.8); }
-    .main .left__title {
-      z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(40, 40, 40, 0.2); }
+  .main .peace {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px; }
+    .main .peace__title {
+      margin-top: 140px;
       font-size: 60px;
       position: relative;
       color: #d7d8d8;
       font-family: "Lato", sans-serif;
       font-weight: 300;
       text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      margin-top: 60%;
-      margin-left: 20px; }
-      .main .left__title .section_subtitle {
-        text-transform: lowercase;
-        line-height: 20px;
+      line-height: 40px; }
+      .main .peace__title .section_subtitle {
+        text-transform: none;
         color: #ffffff; }
-    .main .left__description {
+    .main .peace__description {
       font-size: 16px;
       color: #ffffff;
       font-family: "Lato", sans-serif;
       font-weight: 300;
-      position: absolute;
-      margin: 20px;
-      bottom: 10%;
-      line-height: 25px; }
-    .main .left__back {
-      position: absolute;
-      bottom: 20px;
-      left: 20px; }
-    .main .left__next {
-      position: absolute;
-      bottom: 20px;
-      right: 20px; }
-  .main .right {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-image: url("./../img/paradiseRev.jpg");
-    background-position: left;
-    left: 100%;
-    filter: brightness(0.8);
-    -webkit-filter: brightness(0.8); }
-    .main .right__title {
-      z-index: 999;
-      font-size: 60px;
-      position: relative;
-      color: #d7d8d8;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      margin-top: 60%;
-      margin-left: 20px; }
-      .main .right__title .section_subtitle {
-        text-transform: lowercase;
-        line-height: 20px;
-        color: #ffffff; }
-    .main .right__description {
-      font-size: 16px;
-      color: #ffffff;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      position: absolute;
-      margin: 20px;
-      bottom: 30px;
-      line-height: 25px; }
-    .main .right__next {
-      position: absolute;
-      bottom: 20px;
-      left: 20px; }
+      margin-bottom: 20px;
+      line-height: 20px;
+      letter-spacing: 0.8px; }
