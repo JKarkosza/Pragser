@@ -1,7 +1,13 @@
+// Font
+$mainFont: 'Lato', sans-serif;
+
+// Colors
 $texts: #ffffff;
 $dark: #000000;
 $title-upper: #d7d8d8;
 
+
+// Mixins
 @mixin sectionTitle($font-size, $font-color) {
   font-size: $font-size;
   position: relative;

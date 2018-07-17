@@ -13,7 +13,6 @@ function smoothScroll(btn, dest) {
   })
 }
 
-
 smoothScroll(btns.explore, '#peace');
 smoothScroll(btns.mainMore, '#paradise');
 
