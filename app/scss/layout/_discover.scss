@@ -1,28 +1,10 @@
 .discover {
-  width: 100vw;
-  height: 100vh;
-  background-image: url('./../img/paradise.jpg');
-  background-position: 75%;
-  background-size: cover;
-  position: relative;
+  @include sectionStyle('paradise', 75%);
   &::before{
-    position: absolute;
-    content:" ";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display: block;
-    background-color: rgba(90,90,90,0.3);
-    pointer-events: none;
+    @include sectionFiler(rgba(90,90,90,0.3));
   }
   .paradise {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include sectionContent();
     &__title {
       margin-top: 60px;
       @include sectionTitle(60px, $title-upper);

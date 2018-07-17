@@ -93,14 +93,14 @@ body {
   right: 20px; }
 
 .main {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-image: url("./../img/enter.jpg");
   background-position: 65%;
   background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center; }
+  position: relative; }
   .main::before {
     position: absolute;
     content: " ";

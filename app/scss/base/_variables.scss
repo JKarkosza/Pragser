@@ -8,6 +8,28 @@ $title-upper: #d7d8d8;
 
 
 // Mixins
+
+@mixin sectionStyle($bgImg, $bgPos) {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./../img/' + $bgImg + '.jpg');
+  background-position: $bgPos;
+  background-size: cover;
+  position: relative;
+}
+
+@mixin sectionFilter($filterColor) {
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  background-color: $filterColor;
+  pointer-events: none;
+}
+
 @mixin sectionTitle($font-size, $font-color) {
   font-size: $font-size;
   position: relative;
