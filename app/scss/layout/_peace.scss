@@ -3,19 +3,14 @@
   display: flex;
   justify-content: center;
   &::before{
-    @include sectionFiler(rgba(40,40,40,0.3));
+    @include sectionFilter();
+    background-color:rgba(40,40,40,0.3);
   }
   .peace {
-    // width: 100%;
-    // height: 100%;
-    // padding: 20px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     @include sectionContent();
     &__title {
       margin-top: 20%;
-      @include sectionTitle(60px, $title-upper);
+      @include sectionTitle($title-upper);
       text-transform: uppercase;
       line-height: 40px;
       .section_subtitle {

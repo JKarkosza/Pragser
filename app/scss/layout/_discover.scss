@@ -1,13 +1,14 @@
 .discover {
   @include sectionStyle('paradise', 75%);
   &::before{
-    @include sectionFiler(rgba(90,90,90,0.3));
+    @include sectionFilter();
+    background-color:rgba(90,90,90,0.3);
   }
   .paradise {
     @include sectionContent();
     &__title {
       margin-top: 60px;
-      @include sectionTitle(60px, $title-upper);
+      @include sectionTitle($title-upper);
       text-transform: uppercase;
       line-height: 40px;
       .section_subtitle {

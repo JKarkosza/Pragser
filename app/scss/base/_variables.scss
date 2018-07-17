@@ -18,7 +18,7 @@ $title-upper: #d7d8d8;
   position: relative;
 }
 
-@mixin sectionFilter($filterColor) {
+@mixin sectionFilter() {
   position: absolute;
   content:" ";
   top:0;
@@ -26,12 +26,11 @@ $title-upper: #d7d8d8;
   width:100%;
   height:100%;
   display: block;
-  background-color: $filterColor;
   pointer-events: none;
 }
 
-@mixin sectionTitle($font-size, $font-color) {
-  font-size: $font-size;
+@mixin sectionTitle($font-color) {
+  font-size: 60px;
   position: relative;
   color: $font-color;
   font-family: $mainFont;
@@ -43,4 +42,13 @@ $title-upper: #d7d8d8;
   color: $font-color;
   font-family: $mainFont;
   font-weight: 300;
+}
+
+@mixin sectionContent() {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
