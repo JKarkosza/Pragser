@@ -1,3 +1,5 @@
+
+// >360 MOBILE
 @media (max-width: 359px) {
   .header__title {
     font-size: 50px;
@@ -7,5 +9,47 @@
   }
   .paradise .paradise__title {
     font-size: 50px;
+  }
+}
+
+// TABLETS
+@media (min-width: 768px) {
+  // Global
+  .button {
+    font-size: 35px;
+  }
+  // Landing
+  .header__title {
+    font-size: 80px;
+    padding-left: 15%;
+  }
+  // Peace
+  .main {
+    .peace__title {
+      font-size: 80px;
+      line-height: 50px;
+      margin-left: 15%;
+      margin-top: 15%;
+    }
+    .peace__description {
+      font-size: 26px;
+      margin-bottom: 4em;
+      line-height: 34px;
+    }
+  }
+  // Discover
+  .discover {
+    .paradise__title {
+      font-size: 80px;
+      line-height: 60px;
+      margin-left: 15%;
+      margin-top: 15%;
+    }
+    .paradise__description {
+      font-size: 26px;
+      margin-bottom: 4em;
+      line-height: 34px;
+      margin-left: 10%;
+    }
   }
 }
