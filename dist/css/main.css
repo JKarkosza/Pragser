@@ -218,6 +218,9 @@ body {
 @media (min-width: 768px) {
   .button {
     font-size: 35px; }
+  .arrowBtn {
+    font-size: 40px;
+    right: 40px; }
   .header__title {
     font-size: 80px;
     padding-left: 15%; }
@@ -239,4 +242,10 @@ body {
     font-size: 26px;
     margin-bottom: 4em;
     line-height: 34px;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .discover .arrowBtn {
+    bottom: 40px; }
+  .discover .footer {
+    height: 30px; }
+    .discover .footer__link {
+      font-size: 16px; } }

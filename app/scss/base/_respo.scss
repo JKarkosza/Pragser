@@ -18,6 +18,10 @@
   .button {
     font-size: 35px;
   }
+  .arrowBtn {
+    font-size: 40px;
+    right: 40px;
+  }
   // Landing
   .header__title {
     font-size: 80px;
@@ -50,6 +54,15 @@
       margin-bottom: 4em;
       line-height: 34px;
       margin-left: 10%;
+    }
+    .arrowBtn {
+      bottom: 40px;
+    }
+    .footer {
+      height: 30px;
+      &__link {
+        font-size: 16px;
+      }
     }
   }
 }
